@@ -9,6 +9,7 @@ spring:
   profiles: dev # 开发环境
   application:
     name: demo-provider-dev
+   
 ---
 server:
   port: 4002 #端口号
@@ -16,5 +17,13 @@ spring:
   profiles: prod # 生产环境
   application:
     name: demo-provider-prod
+    
+---
+server:
+  port: 4003 #端口号
+spring:
+  profiles: test # 开发环境
+  application:
+    name: demo-provider-test
 
 #保存时注意，选择 UTF-8 保存
